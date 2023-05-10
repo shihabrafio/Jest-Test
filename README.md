@@ -1,142 +1,110 @@
-# Todo List Project
-<a name="readme-top"></a>
- # 📗 Table of Contents
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack) 
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-<!-- PROJECT DESCRIPTION -->
-# 📖  Todo List  <a name="about-project"></a> 
- 
-"Todo List" is a simple web application that displays a list of task and allow you to add and remove task from that list.
+# Jest testing practice
 
-## 🛠 Built With <a name="built-with"></a>
-- HTML
-- CSS
-- JavaScript (ES6)
-- Webpack
+> Automated testing with Jest
 
-### Tech Stack <a name="tech-stack"></a>
-- HTML
-- CSS
-- javascript
-- Webpack
-- Version Control (GitHub)
- 
-<!-- Features -->
-### Key Features <a name="key-features"></a>
-- Javascript, ES6
-- CSS3
-- HTML5 semantics
-- Webpack
+In this exercise, you will write a few practical tests for JavaScript functions using the [Jest](https://jestjs.io/) library. You should make sure you follow the [AAA pattern](https://github.com/goldbergyoni/javascript-testing-best-practices#-%EF%B8%8F-12-structure-tests-by-the-aaa-pattern) to make your tests easier for other developers to read and understand. You will also try to use the TDD approach in practice.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Instructions:
 
-<!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
- https://enoisong.github.io/TodoList/
+### Task 1
 
-## 💻 Getting Started <a name="getting-started"></a>
-clone from repository: https://github.com/Enoisong/TodoList.git
+- Write a function stringLength(string) that takes any string as an argument and returns its characters count.
+- Now write a test for this function.
+- Next, expand your function to make it check if the string is at least 1 character long and not longer than 10 characters. Throw errors if those conditions are not met.
+- Add tests for the new functionality.
+
+### Task 2
+
+- Write a function reverseString(string) function. It should take a string as an argument and return it reversed.
+- Write at least one test for this function.
+
+### Task 3
+
+In this task, you will need to write several tests for each tested function. You could write all of your tests directly at the top level, but it's better to group related tests so their output is more readable. Jest has the describe() method just for that. Read about it [here](https://jestjs.io/docs/api#describename-fn) and apply it in your tests for this task:
+
+- Write a simple calculator class or object, which will have 4 methods: add, subtract, divide, and multiply.
+- Write at least 3 tests for each of the calculator methods.
+- Group tests for each method using `describe()` method.
+
+### Task 4
+
+In this task we're going to do things differently:
+
+- Start by writing a test for a capitalize(string) function. Your test should make sure that this function takes a string as an argument and returns that string with the first character capitalized.
+- Run your test - it should fail because you don’t have the capitalize(string) function implemented yet.
+- Now make your tests green by implementing the capitalize(string) function. Think about what the minimum amount of code is necessary to pass this test and write it.
+
+## Built With
+
+- Major languages: JS
+- Frameworks: none
+- Technologies used: Git, Jest
+
+## Live Demo
+
+- Not applicable
+
+## Getting Started
+
+To get a local copy up and running follow these steps.
 
 ### Prerequisites
-In order to run this project you need to:
-- Install GIt
-- Install Live server VScode extension and run Go Live
-- Install a Command Line Interface to clone project-Git bash/Terminal
+
+- Jest package
+- A text editor preferably ([Visual Studio Code](https://code.visualstudio.com/))
 
 ### Setup
-Clone this repository to your desired folder: 
-https://github.com/Enoisong/TodoList.git
+
+- For detail description of how to get started with Jest, please, see here: [Jest](https://jestjs.io/docs/getting-started)
 
 ### Install
-Install this project with:
- 
-- VSCode
-- Git.
-- Github.
+
+- Open a terminal and install and run:
+- `npm init -y`  
+- Install Jest:
+- `npm install --save-dev jest`
+- Add to `package.json` file:
+- `
+ "scripts": {
+    "test": "jest"
+  }
+  `
 
 ### Usage
 
-### To run the project, execute the following command:  
-- Git clone <>
-- Install the Live server extension of the VScode and run Go Live
+Run the test by entering:
+
+- `npm test`
 
 ### Run tests
 
-To run linters tests, run the following command: 
-npx hint .
-npx stylelint "**/*.{css,scss}"
-npx eslint .
+Not applicable
 
 ### Deployment
 
-It will be deployed after merge
+Not applicable
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Author
 
-<!-- AUTHORS -->
-## 👥 Author <a name="author"></a> 
-- Enobong Isong 
- 
-👤 **Author**
-- GitHub: [@githubhandle](https://github.com/Enoisong)
-- Twitter: [@twitterhandle](https://twitter.com/Enobongmisong)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/enobong-isong/)
+👤 *A.I.M. Shihab Uddin Khan*
+- GitHub: [@shihabrafio](https://github.com/shihabrafio)
+- Twitter: [@shihab_uddin19](https://twitter.com/shihab_uddin19)
+- LinkedIn: [Shihab Uddin Khan](https://www.linkedin.com/in/shihab-uddin-khan-45620a16a/)
 
-## 🔭 Future Features <a name="future-features"></a>
--   [] **To Add more dynamics to the project; feature like animation 
-    and transition
-    -[]** To integrate backend.
+## 🤝 Contributing
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Contributions, issues, and feature requests are welcome!
 
-<!-- CONTRIBUTING -->
+## Show your support
 
-## 🤝 Contributing <a name="contributing"></a>
+Give a ⭐️ if you like this project!
 
-Contributions, issues, as well as feature requests are welcome!
+## Acknowledgments
+I would like to thank Microverse 
 
-Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 📝 License
 
-<!-- SUPPORT -->
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project, give me a star
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
--	Thanks to the Microverse team for the great curriculum.
--	Thanks to the Code Reviewer(s) for the insightly feedbacks.
--	A great thanks to my coding partner(s), morning session team, 
-  and  standup team for their contributions.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
-## 📝 License <a name="license"></a> 
-
-This project is [MIT](./MIT.md) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
+This project is [MIT](https://github.com/yordinia/yordinia/blob/main/LICENSE) licensed.
